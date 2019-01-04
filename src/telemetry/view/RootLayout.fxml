@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="telemetry.view.RootLayoutController">
+   <children>
+      <TabPane prefHeight="500.0" prefWidth="650.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab fx:id="overview" text="Overview">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                <fx:include fx:id="overviewTab" source="Overview.fxml" />
+              </content>
+            </Tab>
+          <Tab fx:id="logs" text="Show Logs">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              <fx:include fx:id="logsTab" source="Logs.fxml" />
+            </content>
+          </Tab>
+          <Tab fx:id="config" text="Configuration">
+            <content>
+                 
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="500.0" prefWidth="650.0" />
+              <fx:include fx:id="configurationTab" source="Configuration.fxml" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
